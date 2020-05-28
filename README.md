@@ -1,6 +1,6 @@
 # FaceRecognitionDevice_SDK_Android
 
-## VZense TOF camera software develop kit for android system
+## Vzense TOF camera software develop kit for android system
 
 ### Supported Devices
 
