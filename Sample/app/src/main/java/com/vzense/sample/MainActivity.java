@@ -535,8 +535,6 @@ public class MainActivity extends AppCompatActivity {
 					Log.i(TAG, "SN =  " + sn);
 					fwVer = mVzenseCamera.getFWVerion();
 					Log.i(TAG, "fwVer =  " + fwVer);
-					String hwVer = mVzenseCamera.getHWVerion();
-					Log.i(TAG, "hwVer =  " + hwVer);
 					sdkVersion = mVzenseCamera.getSDKVerion();
 					Log.i(TAG, "SDKVersion  =  " + sdkVersion);
 					String deviceName = mVzenseCamera.getDeviceName();
@@ -663,8 +661,8 @@ public class MainActivity extends AppCompatActivity {
 				paint.setDither(true);
 				paint.setTextSize(40);
 				paint.setColor(Color.parseColor("#ff0000"));
-				canvas.drawText(String.valueOf(center), (mBmpDepth.getWidth() / 2) - 20, (mBmpDepth.getHeight() / 2), paint);
-				canvas.drawText(".", (mBmpDepth.getWidth() / 2), (mBmpDepth.getHeight() / 2 + 20), paint);
+				canvas.drawText(String.valueOf(center), (mBmpDepth.getWidth() / 2) - 20, (mBmpDepth.getHeight() / 2 - 10 ), paint);
+				canvas.drawText(".", (mBmpDepth.getWidth() / 2), (mBmpDepth.getHeight() / 2), paint);
 				mRenderDepth.setBuf(mBmpDepth);
 				mGlSurfaceViewDepth.requestRender();
 			}

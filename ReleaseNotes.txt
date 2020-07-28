@@ -1,3 +1,6 @@
+2.0.26
+1.Improved VGA image clarity
+
 2.0.19
 1.Fix a bug where FACE AE doesn't work at special angles.
 
